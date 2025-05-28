@@ -18,12 +18,12 @@ export const ProjectCard = ({
                             }: ProjectCardProps) => {
   return (
       <Link
-          href={link}
+          href={`/project/${title}` || link}
           target="_blank"
           rel="noreferrer noopener"
           className="group relative overflow-hidden rounded-xl border border-[#2A0E61] bg-gradient-to-br from-[#0d0b22] to-[#1a1445] p-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_#a855f7aa]"
       >
-        <div className="relative h-56 w-full overflow-hidden rounded-md">
+      <div className="relative h-56 w-full overflow-hidden rounded-md">
           <Image
               src={src}
               alt={title}

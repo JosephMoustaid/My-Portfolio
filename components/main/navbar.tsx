@@ -14,7 +14,7 @@ export const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
         <Link
-          href="#about-me"
+          href="about"
           className="flex items-center"
         >
           <Image

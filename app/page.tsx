@@ -1,18 +1,8 @@
-import { Encryption } from "@/components/main/encryption";
-import { Hero } from "@/components/main/hero";
-import { Projects } from "@/components/main/projects";
-import { Skills } from "@/components/main/skills";
-import { Blogs } from "@/components/main/blogs";
-export default function Home() {
-  return (
-    <main className="h-full w-full">
-      <div className="flex flex-col gap-20">
-        <Hero />
-        <Skills />
-        <Encryption />
-        <Projects />
-          <Blogs />
-      </div>
-    </main>
-  );
+// app/page.tsx or pages/index.tsx (depending on your Next.js version)
+
+'use client';
+import Home from "@/components/pages/Home";
+
+export default function Page() {
+    return <Home />;
 }

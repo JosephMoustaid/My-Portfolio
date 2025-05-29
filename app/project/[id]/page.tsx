@@ -4,6 +4,8 @@ import { PROJECTSDATA } from '@/constants';
 import type { Project } from '@/constants';
 import { motion } from 'framer-motion';
 
+import Cursor from "@/components/util/cursor";
+
 export default function ProjectDetail({ params }: { params: { id: string } }) {
     const id = params.id;
     const project: Project | undefined = PROJECTSDATA[id as keyof typeof PROJECTSDATA];
@@ -14,6 +16,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
     return (
         <main className="h-[100vh] w-full px-6 pt-24 overflow-hidden bg-transparent text-white">
+            <Cursor />
             <div className=" mx-auto h-full w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}

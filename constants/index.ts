@@ -7,7 +7,7 @@ import {
   RxLinkedinLogo
 } from "react-icons/rx";
 
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaReddit } from "react-icons/fa";
 // project images
 
 // ByteBurst
@@ -82,9 +82,9 @@ export const RisingHope4 = '/projectPreviews/RisingHope/contact.png';
 export const SOCIALS = [
 
   {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    name: "Reddit",
+    icon: FaReddit,
+    link: "https://www.reddit.com/user/theDawnLion/",
   },
   {
     name: "Github",
@@ -223,19 +223,14 @@ export const FOOTER_DATA = [
     title: "Community",
     data: [
       {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com",
+        link: "https://github.com/josephmoustaid",
       },
       {
         name: "Discord",
         icon: RxDiscordLogo,
-        link: "https://discord.com",
+        link: "https://discord.com/channels/theredknight7032",
       },
     ],
   },
@@ -243,19 +238,14 @@ export const FOOTER_DATA = [
     title: "Social Media",
     data: [
       {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
+        name: "Reddit",
+        icon: FaReddit,
+        link: "https://www.reddit.com/user/theDawnLion/",
       },
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
+        link: "linkedin.com/in/youssef-moustaid-71013a240",
       },
       {
         name: "Github",
@@ -268,19 +258,14 @@ export const FOOTER_DATA = [
     title: "About",
     data: [
       {
-        name: "Become Sponsor",
+        name: "About me",
         icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
+        link: "/about",
       },
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:contact@example.com",
+        link: "mailto:moustiadbusiness@gmailcom",
       },
     ],
   },
@@ -311,53 +296,59 @@ export const LINKS = {
 
 export const BLOGS = [
   {
+    id : 1,
     title: "Mastering React Server Components in 2025",
     summary:
         "React Server Components (RSC) are reshaping how we think about rendering. In this post, we break down the fundamentals of RSC, compare them to traditional SSR and CSR techniques, and show you how to integrate them into your Next.js 14 projects. Includes code examples and performance benchmarks.",
     image: "/blogImages/ai.webp",
-    link: "https://dev.to/yourusername/mastering-react-server-components-in-2025-abc",
+    link: "http://localhost:3000/blog/1", 
     date: "May 20, 2025",
   },
   {
+    id : 2,
     title: "Embracing Failure as a Path to Growth",
     summary:
         "Failure isn’t the opposite of success—it’s part of the journey. Here’s\n" +
         "            why I believe we should celebrate our failures.",
     image: "/blogImages/frustration.jpg",
-    link: "https://yourblog.com/ai-powered-recipe-app",
+    link: "http://localhost:3000/blog/2",  
     date: "April 25, 2025",
   },
   {
+    id : 3,
     title: "Why Minimalism Matters",
     summary:
         "In a world of endless options, choosing less can lead to more clarity, purpose, and happiness.",
     image: "/blogImages/minimalism.jpg",
-    link: "https://yourblog.com/ai-powered-recipe-app",
+    link: "http://localhost:3000/blog/3",
     date: "April 25, 2025",
   },
   {
+    id : 4,
     title: "The Intersection of Technology and Humanity",
     summary:
         "As technology evolves, how do we ensure it enhances humanity rather \n" +
         "            than diminishes it?",
     image: "/blogImages/solarpunk.jpg",
-    link: "https://yourblog.com/ai-powered-recipe-app",
+    link: "http://localhost:3000/blog/4",
     date: "April 25, 2025",
   },
   {
+    id : 5,
     title: "Lessons from Nature: What It Teaches Us About Innovation",
     summary:
         "From the efficiency of ecosystems to the resilience of forests, nature offers endless inspiration for innovation.",
     image: "/blogImages/natureandinnovation.jpg",
-    link: "https://yourblog.com/ai-powered-recipe-app",
+    link: "http://localhost:3000/blog/5",
     date: "April 25, 2025",
   },
   {
+    id : 6,
     title: "My experience with Spring ",
     summary:
         "From the basics of Spring Boot to the complexities of Spring Cloud.",
     image: "/blogImages/Spring.webp",
-    link: "https://yourblog.com/ai-powered-recipe-app",
+    link: "http://localhost:3000/blog/6",
     date: "April 25, 2025",
   },
 ];

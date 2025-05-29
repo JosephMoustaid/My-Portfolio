@@ -55,7 +55,8 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
+          I build solutions that are innovative through intergrating data science&AI with CMS's and overall software. <br />
+          I have experience in Machine learning models, Recommendation engines, Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
 

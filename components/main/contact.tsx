@@ -70,7 +70,7 @@ const Contact = () => {
         >
           <h4 className="text-2xl font-semibold text-white">Let’s discuss whatever you have in mind</h4>
           <Image
-            src="/images/contact.avif"
+            src="/caffee.webp"
             width={2000}
             height={1000}
             alt="Contact"

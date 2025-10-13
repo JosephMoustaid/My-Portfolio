@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import me from '../../public/me/download.png';
 const tagVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -13,15 +13,16 @@ const tagVariants = {
 
 export default function About() {
     const keywords = [
-        'Data Science',
-        'Machine Learning',
-        'Spring Boot',
-        'React',
-        'Python',
-        'Cloud Engineering',
+        'Data Engineering',
         'Microservices',
-        'Clean Architecture',
-        'Creative Problem Solving',
+        'Spring Boot',
+        'Apache Spark',
+        'AWS Cloud',
+        'Kafka & Airflow',
+        'Python & Java',
+        'Machine Learning',
+        'Docker & CI/CD',
+        'Distributed Systems',
     ];
 
     return (
@@ -37,6 +38,7 @@ export default function About() {
                     About Me
                 </motion.h1>
 
+
                 {/* Main content layout */}
                 <motion.div
                     initial="hidden"
@@ -46,17 +48,25 @@ export default function About() {
                 >
                     {/* Left side */}
                     <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+                        <motion.img
+                            src={me.src}
+                            alt="Youssef Moustaid"
+                            className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-blue-500 align-center mx-auto md:mx-0 justify-center"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                        />
                         <motion.p>
-                            I’m <span className="text-white font-semibold">Youssef Moustaid</span> — a forward-thinking software engineer and future data scientist based in Casablanca. Currently in my final year at EMSI, I’m passionate about engineering systems that are as beautiful in design as they are powerful in function.
+                            I'm <span className="text-white font-semibold">Youssef Moustaid</span> — a Software & Data Engineer based in Casablanca, specializing in building scalable distributed systems and data-driven solutions. Currently completing my Engineering degree at EMSI with a focus on Software Engineering and Distributed Systems.
                         </motion.p>
                         <motion.p>
-                            I blend my interests in <span className="text-white font-medium">data, AI, and backend architecture</span> to build impactful solutions — from real-time VR environments to intelligent job platforms and predictive pharmaceutical dashboards.
+                            With hands-on experience from internships at <span className="text-white font-medium">Marketing Confort</span> (Microservices Architecture), the <span className="text-white font-medium">Multidisciplinary Research Lab</span> (WebXR & Real-time Systems), and <span className="text-white font-medium">World Wide Loyalty System</span> (Data Analytics), I've developed expertise in architecting end-to-end solutions that bridge engineering excellence with business impact.
                         </motion.p>
                         <motion.p>
-                            Known for being analytical, fast-learning, and highly creative, I&apos;m constantly experimenting with emerging technologies — and thrive when bridging performance and user-centric design.
+                            I excel at designing <span className="text-white font-medium">cloud-native data pipelines, microservices architectures, and real-time analytics platforms</span> — leveraging technologies like Spring Boot, AWS, Apache Spark, Kafka, and Airflow. My approach combines software engineering rigor with data science innovation to deliver production-ready systems.
                         </motion.p>
                         <motion.p>
-                            My toolkit includes <span className="text-white font-semibold">Python, Java, Spring Boot, React, Postgres, MongoDB</span>, and more — and I&apos;m comfortable across the full stack, from the terminal to the front-facing UI.
+                            Certified as an <span className="text-white font-semibold">IBM Professional Data Engineer</span>, <span className="text-white font-semibold">AWS Cloud Practitioner</span>, and <span className="text-white font-semibold">IBM Professional Data Scientist</span>, I bring a comprehensive skill set spanning distributed computing, machine learning, and modern DevOps practices.
                         </motion.p>
 
                         {/* Tech tags */}
@@ -76,19 +86,75 @@ export default function About() {
 
                     {/* Right side: Timeline & Cards */}
                     <div className="flex flex-col gap-6">
-                        {/* Timeline style journey card */}
+                        {/* Professional Experience */}
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="rounded-xl p-6 border border-gray-700 bg-gradient-to-br from-[#111827] to-[#1f2937] shadow-lg backdrop-blur-lg"
                         >
-                            <h3 className="text-xl font-bold mb-4 text-white">Journey</h3>
+                            <h3 className="text-xl font-bold mb-4 text-white">Professional Experience</h3>
+                            <ul className="space-y-4 text-gray-300 text-sm">
+                                <li>
+                                    <div className="flex justify-between items-start mb-1">
+                                        <span className="text-white font-semibold">Full-Stack Engineer</span>
+                                        <span className="text-gray-400 text-xs">Jul–Sept 2025</span>
+                                    </div>
+                                    <div className="text-blue-400 text-xs mb-2">Marketing Confort</div>
+                                    <p className="text-xs leading-relaxed">Architected 9 Spring Boot microservices with API Gateway, reducing latency by 30%. Implemented CI/CD pipelines and connected services to mobile & CMS platforms.</p>
+                                </li>
+                                <li>
+                                    <div className="flex justify-between items-start mb-1">
+                                        <span className="text-white font-semibold">Full-Stack Engineer</span>
+                                        <span className="text-gray-400 text-xs">Jul–Sept 2024</span>
+                                    </div>
+                                    <div className="text-blue-400 text-xs mb-2">Multidisciplinary Research Lab</div>
+                                    <p className="text-xs leading-relaxed">Built immersive WebXR learning platform with real-time WebSockets collaboration. Managed full project lifecycle applying software architecture principles.</p>
+                                </li>
+                                <li>
+                                    <div className="flex justify-between items-start mb-1">
+                                        <span className="text-white font-semibold">Data Analyst</span>
+                                        <span className="text-gray-400 text-xs">Aug 2022</span>
+                                    </div>
+                                    <div className="text-blue-400 text-xs mb-2">World Wide Loyalty System</div>
+                                    <p className="text-xs leading-relaxed">Analyzed user data and built interactive dashboards with Google Analytics & SQL, boosting engagement by 15% through predictive analytics.</p>
+                                </li>
+                            </ul>
+                        </motion.div>
+
+                        {/* Education & Certifications */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
+                            className="rounded-xl p-6 border border-gray-700 bg-gradient-to-br from-[#111827] to-[#1f2937] shadow-lg backdrop-blur-lg"
+                        >
+                            <h3 className="text-xl font-bold mb-4 text-white">Education & Certifications</h3>
                             <ul className="space-y-3 text-gray-300 text-sm">
-                                <li>🎓 <span className="text-white font-medium">2021–2025</span>: Engineering Degree at EMSI – MIAGE specialization - Currently going</li>
-                                <li>🧠 Led backend & AI on multiple team projects and apps</li>
-                                <li>🏆 Participated in tech competitions and hackathons</li>
-                                <li>🚀 Built full-stack platforms, recommender systems, and VR labs</li>
+                                <li>🎓 <span className="text-white font-medium">EMSI (2021–2025)</span> — Software Engineering & Distributed Systems</li>
+                                <li>� <span className="text-white">IBM Professional Data Engineer</span> (2024)</li>
+                                <li>☁️ <span className="text-white">AWS Cloud Practitioner</span> (2025)</li>
+                                <li>🧠 <span className="text-white">IBM Professional Data Scientist</span> (2024)</li>
+                                <li>🗄️ <span className="text-white">IBM Relational Database Administration</span> (2025)</li>
+                                <li>🏆 <span className="text-white">MIT x OpenAI Hackathon</span> — AI Finance Dashboard (2025)</li>
+                            </ul>
+                        </motion.div>
+
+
+
+                        {/* Key Projects */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                            className="rounded-xl p-6 border border-gray-700 bg-gradient-to-br from-[#111827] to-[#1f2937] shadow-lg backdrop-blur-lg"
+                        >
+                            <h3 className="text-xl font-bold mb-4 text-white">Notable Projects</h3>
+                            <ul className="space-y-3 text-gray-300 text-sm">
+                                <li>📊 <span className="text-white font-medium">RetailDataOps</span> — Cloud-native analytics platform with Spark, ETL pipelines, and real-time BI dashboards</li>
+                                <li>🚚 <span className="text-white font-medium">GlobalSupplyChain</span> — Real-time streaming pipeline using Kafka, Airflow & AWS Data Lake</li>
+                                <li>💊 <span className="text-white font-medium">PharmaIQ</span> — Drug shortage prediction with Random Forest, ETL pipeline & Django deployment</li>
+                                <li>🔧 <span className="text-white font-medium">Bricole</span> — Job marketplace with NLP matching, Spring Boot REST API & Docker containerization</li>
                             </ul>
                         </motion.div>
 
@@ -96,16 +162,19 @@ export default function About() {
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.6 }}
+                            transition={{ duration: 0.6, delay: 0.7 }}
                             className="rounded-xl p-6 border border-gray-700 bg-gradient-to-br from-[#111827] to-[#1f2937] shadow-lg backdrop-blur-lg"
                         >
-                            <h3 className="text-xl font-bold mb-4 text-white">Vision</h3>
+                            <h3 className="text-xl font-bold mb-4 text-white">Vision & Approach</h3>
                             <p className="text-gray-300 text-sm leading-relaxed">
-                                I aim to craft technology that empowers people — intelligent platforms, clean backend systems,
-                                and human-centered interfaces. I&apos;m not just solving technical problems, I&apos;m building momentum
-                                toward a smarter, more intuitive future.
+                                I build systems that scale — combining data engineering excellence with software architecture best practices. 
+                                From designing distributed pipelines to deploying production microservices, I focus on delivering solutions 
+                                that are maintainable, performant, and drive measurable business value. My goal is to bridge the gap between 
+                                raw data and actionable intelligence through robust, cloud-native platforms.
                             </p>
                         </motion.div>
+
+                 
                     </div>
                 </motion.div>
             </div>

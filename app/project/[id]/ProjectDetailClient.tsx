@@ -1,9 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import Cursor from "@/components/util/cursor";
 import type { Project } from '@/constants';
 
 export default function ProjectDetailClient({ project }: { project: Project }) {
+    const router = useRouter();
+
     return (
         <main className="h-[100vh] w-full px-6 pt-24 overflow-hidden bg-transparent text-white">
             <Cursor />
@@ -40,8 +43,8 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                         <div className="flex items-center gap-4 sticky top-0 bg-transparent z-10 pt-2">
                             {/* Back Button */}
                             <button
-                                onClick={() => window.history.back()}
-                                className="w-10 h-10 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20 text-white flex items-center justify-center text-lg font-bold shadow"
+                                onClick={() => router.back()}
+                                className="w-10 h-10 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20 text-white flex items-center justify-center text-lg font-bold shadow transition-all duration-300 hover:scale-110"
                                 title="Go back"
                             >
                                 ←

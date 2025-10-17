@@ -6,11 +6,14 @@
 
 import { ProjectCard } from "@/components/sub/project-card";
 import { PROJECTS } from "@/constants";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import 'aos/dist/aos.css'; // Import AOS styles
 
 export const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedProjects = showAll ? PROJECTS.slice().reverse() : PROJECTS.slice().reverse().slice(0, 6);
+
   useEffect(() => {
     // Initialize AOS when component mounts
     const AOS = require('aos');
@@ -47,8 +50,7 @@ export const Projects = () => {
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 w-full">
-          {PROJECTS.map((project, index) => (
-
+          {displayedProjects.map((project, index) => (
             <ProjectCard
               key={index}
               src={project.image}
@@ -57,8 +59,25 @@ export const Projects = () => {
               link={project.link}
               technologies={project.technologies}
             />
-          ))}
-        </div>
+          ))}      </div>
+
+      {!showAll && PROJECTS.length > 6 && (
+        <button
+          onClick={() => setShowAll(true)}
+          className="mt-10 py-3 px-8 button-primary text-center text-white cursor-pointer rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300"
+        >
+          Show More Projects
+        </button>
+      )}
+
+      {showAll && (
+        <button
+          onClick={() => setShowAll(false)}
+          className="mt-10 py-3 px-8 button-primary text-center text-white cursor-pointer rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300"
+        >
+          Show Less
+        </button>
+      )}
     </section>
   );
 };

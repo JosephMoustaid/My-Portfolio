@@ -11,93 +11,97 @@ import { FaGithub, FaReddit } from "react-icons/fa";
 // project images
 
 // ByteBurst
-export const ByteBurstImage1 = '/compressed-images-zd9vtfx4/compressed-ByteBurst.webp';
-export const ByteBurstImage2 = '/compressed-images-zd9vtfx4/compressed-tablet.webp';
+export const ByteBurstImage1 = '/projectPreviewsCompressed/ByteBurts/ByteBurst.webp';
+export const ByteBurstImage2 = '/projectPreviewsCompressed/ByteBurts/tablet.webp';
 
 // ChatBot
-export const ChatBotImage = '/compressed-images-zd9vtfx4/compressed-chatbot.webp';
+export const ChatBotImage = '/projectPreviewsCompressed/ChatBot/chatbot.webp';
 
 // ClubXtreme
-export const ClubXtremeImage1 = '/compressed-images-zd9vtfx4/compressed-ClubXtreme.webp';
-export const ClubXtremeImage2 = '/compressed-images-zd9vtfx4/compressed-CMS.webp';
-export const ClubXtremeImage3 = '/compressed-images-zd9vtfx4/compressed-userInfo.webp';
+export const ClubXtremeImage1 = '/projectPreviewsCompressed/ClubXtreme/ClubXtreme.webp';
+export const ClubXtremeImage2 = '/projectPreviewsCompressed/ClubXtreme/CMS.webp';
+export const ClubXtremeImage3 = '/projectPreviewsCompressed/ClubXtreme/userInfo.webp';
 
 // Gericht
-export const GerichtImage1 = '/compressed-images-zd9vtfx4/compressed-gericht.webp';
-export const GerichtImage2 = '/compressed-images-zd9vtfx4/compressed-about.webp';
+export const GerichtImage1 = '/projectPreviewsCompressed/Gericht/gericht.webp';
+export const GerichtImage2 = '/projectPreviewsCompressed/Gericht/about.webp';
 
 // PharmaIQ
-export const pharmaIQ = '/compressed-images-zd9vtfx4/compressed-pharmaIQ.webp';
-export const pharmaIQDashboard = '/compressed-images-zd9vtfx4/compressed-dashboard.webp';
-export const pharmaIQCongig = '/compressed-images-zd9vtfx4/compressed-config.webp';
-export const pharmaIQEdit = '/compressed-images-zd9vtfx4/compressed-edit.webp';
-export const pharmaIQGroups = '/compressed-images-zd9vtfx4/compressed-dashboard.webp';
-export const pharmaIQInsight1 = '/compressed-images-zd9vtfx4/compressed-insights.webp';
-export const pharmaIQInsight2 = '/compressed-images-zd9vtfx4/compressed-insight2.webp';
-export const pharmaIQLightMode = '/compressed-images-zd9vtfx4/compressed-lightMode.webp';
-export const pharmaIQList = '/compressed-images-zd9vtfx4/compressed-list.webp';
-export const pharmaIQNotifs = '/compressed-images-zd9vtfx4/compressed-notifs.webp';
-export const pharmaIQChatBot = '/compressed-images-zd9vtfx4/compressed-chatbot.webp';
+export const pharmaIQ = '/projectPreviewsCompressed/pharmaIQ/pharmaIQ.webp';
+export const pharmaIQDashboard = '/projectPreviewsCompressed/pharmaIQ/dashboard.webp';
+export const pharmaIQCongig = '/projectPreviewsCompressed/pharmaIQ/config.webp';
+export const pharmaIQEdit = '/projectPreviewsCompressed/pharmaIQ/edit.webp';
+export const pharmaIQGroups = '/projectPreviewsCompressed/pharmaIQ/groups.webp';
+export const pharmaIQInsight1 = '/projectPreviewsCompressed/pharmaIQ/insights.webp';
+export const pharmaIQInsight2 = '/projectPreviewsCompressed/pharmaIQ/insight2.webp';
+export const pharmaIQLightMode = '/projectPreviewsCompressed/pharmaIQ/lightMode.webp';
+export const pharmaIQList = '/projectPreviewsCompressed/pharmaIQ/list.webp';
+export const pharmaIQNotifs = '/projectPreviewsCompressed/pharmaIQ/notifs.webp';
+export const pharmaIQChatBot = '/projectPreviewsCompressed/pharmaIQ/chatbot.webp';
 
 // GoMacros
-export const GoMacrosImage1 = '/compressed-images-zd9vtfx4/compressed-goMacros.webp';
-export const GoMacrosImage2 = '/compressed-images-zd9vtfx4/compressed-goMacrosResult.webp';
+export const GoMacrosImage1 = '/projectPreviewsCompressed/goMacros/goMacros.webp';
+export const GoMacrosImage2 = '/projectPreviewsCompressed/goMacros/goMacrosResult.webp';
 
 // Immerse
-export const ImmerseImage1 = '/compressed-images-zd9vtfx4/compressed-labCopy.webp';
-export const ImmerseImage2 = '/compressed-images-zd9vtfx4/compressed-labCourse.webp';
-export const ImmerseImage3 = '/compressed-images-zd9vtfx4/compressed-uniHall.webp';
+export const ImmerseImage1 = '/projectPreviewsCompressed/Immerse/labCopy.webp';
+export const ImmerseImage2 = '/projectPreviewsCompressed/Immerse/labCourse.webp';
+export const ImmerseImage3 = '/projectPreviewsCompressed/Immerse/uniHall.webp';
 
 // MyWeather
-export const MyWeatherImage = '/compressed-images-zd9vtfx4/compressed-myweather.webp';
+export const MyWeatherImage = '/projectPreviewsCompressed/myweather/myweather.webp';
 
 // Recipe Idea
-export const RecipeIdeaImage = '/compressed-images-zd9vtfx4/compressed-recipe.webp';
+export const RecipeIdeaImage = '/projectPreviewsCompressed/Recipeidea/recipe.webp';
 
 // Yomo
-export const YomoImage = '/compressed-images-zd9vtfx4/compressed-yomo.webp';
+export const YomoImage = '/projectPreviewsCompressed/Yomo/yomo.webp';
 
 // Bricole
-export const BricoleBanner = '/compressed-images-zd9vtfx4/compressed-Banner.webp';
-export const BricoleImage1 = '/compressed-images-zd9vtfx4/compressed-choose.webp';
-export const BricoleImage2 = '/compressed-images-zd9vtfx4/compressed-signin.webp';
-export const BricoleImage3 = '/compressed-images-zd9vtfx4/compressed-signup.webp';
-export const BricoleImage4 = '/compressed-images-zd9vtfx4/compressed-signupOrSignin.webp';
-export const BricoleImage5 = '/compressed-images-zd9vtfx4/compressed-Applicationsuccesfull.webp';
-export const BricoleImage6 = '/compressed-images-zd9vtfx4/compressed-profile.webp';
-export const BricoleImage7 = '/compressed-images-zd9vtfx4/compressed-Employer-dashboard(mobile).webp';
-export const BricoleImage8 = '/compressed-images-zd9vtfx4/compressed-Employee-Manageprofile(mobile).webp';
-export const BricoleImage9 = '/compressed-images-zd9vtfx4/compressed-Singlejoboffer(mobile).webp';
-export const BricoleImage10 = '/compressed-images-zd9vtfx4/compressed-newJobOffer.webp';
-export const BricoleImage11 = '/compressed-images-zd9vtfx4/compressed-JobsList.webp';
-export const BricoleImage12 = '/compressed-images-zd9vtfx4/compressed-myapplications.webp';
-
+export const BricoleBanner = '/projectPreviewsCompressed/Bricole/Banner.webp';
+export const BricoleImage1 = '/projectPreviewsCompressed/Bricole/2.png';
+export const BricoleImage2 = '/projectPreviewsCompressed/Bricole/3.png';
+export const BricoleImage3 = '/projectPreviewsCompressed/Bricole/4.png';
+/*
+export const BricoleImage1 = '/projectPreviewsCompressed/Bricole/choose.webp';
+export const BricoleImage2 = '/projectPreviewsCompressed/Bricole/signin.webp';
+export const BricoleImage3 = '/projectPreviewsCompressed/Bricole/signup.webp';
+export const BricoleImage4 = '/projectPreviewsCompressed/Bricole/signupOrSignin.webp';
+export const BricoleImage5 = '/projectPreviewsCompressed/Bricole/Applicationsuccesfull.webp';
+export const BricoleImage6 = '/projectPreviewsCompressed/Bricole/profile.webp';
+export const BricoleImage7 = '/projectPreviewsCompressed/Bricole/Employer-dashboard(mobile).webp';
+export const BricoleImage8 = '/projectPreviewsCompressed/Bricole/Employee-Manageprofile(mobile).webp';
+export const BricoleImage9 = '/projectPreviewsCompressed/Bricole/Singlejoboffer(mobile).webp';
+export const BricoleImage10 = '/projectPreviewsCompressed/Bricole/newJobOffer.webp';
+export const BricoleImage11 = '/projectPreviewsCompressed/Bricole/JobsList.webp';
+export const BricoleImage12 = '/projectPreviewsCompressed/Bricole/myapplications.webp';
+*/
 // Rising Hope
-export const RisingHopeHome = '/compressed-images-zd9vtfx4/compressed-home.webp';
-export const RisingHope1 = '/compressed-images-zd9vtfx4/compressed-signup.webp';
-export const RisingHope2 = '/compressed-images-zd9vtfx4/compressed-charities.webp';
-export const RisingHope3 = '/compressed-images-zd9vtfx4/compressed-stripe.webp';
-export const RisingHope4 = '/compressed-images-zd9vtfx4/compressed-contact.webp';
+export const RisingHopeHome = '/projectPreviewsCompressed/RisingHope/home.webp';
+export const RisingHope1 = '/projectPreviewsCompressed/RisingHope/signup.webp';
+export const RisingHope2 = '/projectPreviewsCompressed/RisingHope/charities.webp';
+export const RisingHope3 = '/projectPreviewsCompressed/RisingHope/stripe.webp';
+export const RisingHope4 = '/projectPreviewsCompressed/RisingHope/contact.webp';
 
-export const MobilocaHome = '/compressed-images-zd9vtfx4/compressed-home.webp';
-export const Mobiloca1 = '/compressed-images-zd9vtfx4/compressed-calender.webp';
-export const Mobiloca2 = '/compressed-images-zd9vtfx4/compressed-detailreservation.webp';
-export const Mobiloca3 = '/compressed-images-zd9vtfx4/compressed-documentsuivi.webp';
+export const MobilocaHome = '/projectPreviewsCompressed/Mobiloca/home.webp';
+export const Mobiloca1 = '/projectPreviewsCompressed/Mobiloca/calender.webp';
+export const Mobiloca2 = '/projectPreviewsCompressed/Mobiloca/detailreservation.webp';
+export const Mobiloca3 = '/projectPreviewsCompressed/Mobiloca/documentsuivi.webp';
 
-export const Findoc = '/compressed-images-zd9vtfx4/compressed-query.webp';
-export const Findoc1 = '/compressed-images-zd9vtfx4/compressed-response.webp';
-export const Findoc2 = '/compressed-images-zd9vtfx4/compressed-dashboard.webp';
+export const Findoc = '/projectPreviewsCompressed/FinDocAI/query.webp';
+export const Findoc1 = '/projectPreviewsCompressed/FinDocAI/response.webp';
+export const Findoc2 = '/projectPreviewsCompressed/FinDocAI/dashboard.webp';
 
-export const SpaceXImage1 = '/compressed-images-zd9vtfx4/compressed-home.webp';
-export const SpaceXImage2 = '/compressed-images-zd9vtfx4/compressed-x1.webp';
-export const SpaceXImage3 = '/compressed-images-zd9vtfx4/compressed-x2.webp';
-export const SpaceXImage4 = '/compressed-images-zd9vtfx4/compressed-x3.webp';
-export const SpaceXImage5 = '/compressed-images-zd9vtfx4/compressed-x4.webp';
-export const SpaceXImage6 = '/compressed-images-zd9vtfx4/compressed-x5.webp';
-export const SpaceXImage7 = '/compressed-images-zd9vtfx4/compressed-x6.webp';
-export const SpaceXImage8 = '/compressed-images-zd9vtfx4/compressed-x7.webp';
-export const SpaceXImage9 = '/compressed-images-zd9vtfx4/compressed-x8.webp';
-export const SpaceXImage10 = '/compressed-images-zd9vtfx4/compressed-x9.webp';
+export const SpaceXImage1 = '/projectPreviewsCompressed/SpaceX/home.webp';
+export const SpaceXImage2 = '/projectPreviewsCompressed/SpaceX/x1.webp';
+export const SpaceXImage3 = '/projectPreviewsCompressed/SpaceX/x2.webp';
+export const SpaceXImage4 = '/projectPreviewsCompressed/SpaceX/x3.webp';
+export const SpaceXImage5 = '/projectPreviewsCompressed/SpaceX/x4.webp';
+export const SpaceXImage6 = '/projectPreviewsCompressed/SpaceX/x5.webp';
+export const SpaceXImage7 = '/projectPreviewsCompressed/SpaceX/x6.webp';
+export const SpaceXImage8 = '/projectPreviewsCompressed/SpaceX/x7.webp';
+export const SpaceXImage9 = '/projectPreviewsCompressed/SpaceX/x8.webp';
+export const SpaceXImage10 = '/projectPreviewsCompressed/SpaceX/x9.webp';
 export const SpaceXImage11 = '/compressed-images-zd9vtfx4/compressed-x10.webp';
 export const SOCIALS = [
 
@@ -162,91 +166,91 @@ export const PROJECTS = [
   {
     title: "Yomo",
     description: "Yomo is an e-commerce website that showcases and sells my artwork including paintings, drawings, and prints. The platform provides a seamless shopping experience for art enthusiasts, allowing them to browse through various collections, view detailed images of the artwork, and make secure purchases.",
-    image: "/compressed-images-zd9vtfx4/compressed-yomo.webp",
+    image: "/projectPreviewsCompressed/Yomo/yomo.webp",
     link: "https://github.com/JosephMoustaid/ART-STORE",
     technologies: ["React", "Node.js & Express", "Postgres", "Sass"]
   },
   {
     title: "Recipidea",
     description: "Recipidea is a recipe management platform that allows users to search, save, and share their favorite recipes. The platform provides a user-friendly interface for browsing recipes, viewing detailed instructions, and managing personal recipe collections.",
-    image: "/compressed-images-zd9vtfx4/compressed-recipe.webp",
+    image: "/projectPreviewsCompressed/Recipeidea/recipe.webp",
     link: "https://github.com/JosephMoustaid/Recipidea",
     technologies: ["Python", "Django", "Sass", "recipes open Database"]
   },
   {
     title: "ClubXtreme",
     description: "Sports Club Management Platform with real-time overview of club activities, including tournaments, events, and transactions. Features member management, event planning, training sessions organization, and detailed reporting.",
-    image: "/compressed-images-zd9vtfx4/compressed-ClubXtreme.webp",
+    image: "/projectPreviewsCompressed/ClubXtreme/ClubXtreme.webp",
     link: "",
     technologies: ["PHP", "Boostrap", "Sass", "mySQL"]
   },
   {
     title: "pharmaIQ",
     description: "pharmaIQ is an AI-powered platform designed for the pharmaceutical sector to prevent and predict drug shortages using predictive models. It also provides an AI medical assistant to enhance healthcare decision-making and streamline pharmaceutical operations.",
-    image: "/compressed-images-zd9vtfx4/compressed-pharmaIQ.webp",
+    image: "/projectPreviewsCompressed/pharmaIQ/pharmaIQ.webp",
     link: "",
     technologies: ["Django", "Llama 2.0", "Scikit-learn", "Python", "Sass", "Bootstrap"]
   },
   {
     title: "Immerse",
     description: "Immerse is a web-based immersive platform leveraging WebXR technology to create virtual environments for educational and collaborative purposes. It allows users to interact with 3D spaces, integrate multimedia elements, and collaborate in real time.",
-    image: "/compressed-images-zd9vtfx4/compressed-labCopy.webp",
+    image: "/projectPreviewsCompressed/Immerse/labCopy.webp",
     link: "",
     technologies: ["A-frame", "WebXR", "React", "Node.js & Express", "Socket.IO", "Sass", "Postgres"]
   },
   {
     title: "Gericht",
     description: "Gericht is a premium restaurant website designed to provide an elegant online experience for customers. It offers a sophisticated and visually appealing interface, showcasing the restaurant's menu, reservations, and special events.",
-    image: "/compressed-images-zd9vtfx4/compressed-gericht.webp",
+    image: "/projectPreviewsCompressed/Gericht/gericht.webp",
     link: "",
     technologies: ["Sass", "JavaScript", "HTML"]
   },
   {
     title: "ByteBurst",
     description: "Built a dynamic website that provides articles, news, tutorials, and more. It provides a platform for users to share their knowledge and help others. The website was built to provide an authenticated source of information, propaganda-free.",
-    image: "/compressed-images-zd9vtfx4/compressed-ByteBurst.webp",
+    image: "/projectPreviewsCompressed/ByteBurts/ByteBurst.webp",
     link: "https://github.com/JosephMoustaid/ByteBurst",
     technologies: ["PHP", "Symfony", "mySQL", "Scss"]
   },
   {
     title: "MyWeather",
     description: "MyWeather is a weather forecasting application that provides real-time weather updates and forecasts for various locations. The platform uses the Open Weather API to fetch accurate weather data and displays it in a user-friendly interface.",
-    image: "/compressed-images-zd9vtfx4/compressed-myweather.webp",
+    image: "/projectPreviewsCompressed/myweather/myweather.webp",
     link: "https://github.com/JosephMoustaid/MyWeather",
     technologies: ["Django", "Open weather API", "mySQL", "Scss"]
   },
   {
-    title: "ChatBot",
-    description: "ChatBot is an AI-powered chatbot application that provides automated responses to user queries. The platform is designed to assist users with common questions and tasks, offering a seamless conversational experience.",
-    image: "/compressed-images-zd9vtfx4/compressed-chatbot.webp",
+    title: "ChatWithMe",
+    description: "ChatWithMe is an AI-powered chatbot application that provides automated responses to user queries. The platform is designed to assist users with common questions and tasks, offering a seamless conversational experience.",
+    image: "/projectPreviewsCompressed/ChatBot/chatbot.webp",
     link: "https://github.com/JosephMoustaid/chatbotUI",
     technologies: ["Django", "Ollama 3.2", "Python", "Scss"]
   },
   {
     title: "Bricole",
     description: "A comprehensive platform connecting job seekers with employers, featuring AI-powered job matching, chat functionality, and application management for both employees and employers.",
-    image: "/compressed-images-zd9vtfx4/compressed-Banner.webp",
+    image: "/projectPreviewsCompressed/Bricole/Banner.webp",
     link: "https://github.com/JosephMoustaid/PFA",
     technologies: ["Spring boot", "Java for Android", "REST API", "React", "Python", "Flask", "Open-LLM-V6-2", "Scss"]
   },
   {
     title: "RisingHope",
     description: "A charity donation platform with secure payment processing, user authentication, and charity management features. Built with Spring Boot and integrated with Stripe for payment processing.",
-    image: "/compressed-images-zd9vtfx4/compressed-home.webp",
+    image: "/projectPreviewsCompressed/RisingHope/home.webp",
     link: "https://github.com/JosephMoustaid/chatbotUI",
     technologies: ["Spring Boot", "Thymleaf", "JWT tokens", "Oauth2", "Stripe", "JavaScript", "Scss"]
   },
   {
     title: "Mobiloca",
     description: "Mobiloca is a project I worked on during my Internship at Izemx, It's the full digitalization of a major vehicle rental company based in France, the project included the CMS which manages everything the company does from administration documents to customer interactions and reservations, as well as a mobile app for the front office allowing clients to make and track their reservations.",
-    image: "/compressed-images-zd9vtfx4/compressed-home.webp",
+    image: "/projectPreviewsCompressed/Mobiloca/home.webp",
     link: "",
     technologies: ["React Native", "Next.js", "AWS", "Spring Micro services", "PostgreSQL"]
   },
   {
     title: "SpaceX Falcon9 Landing success predictor",
     description: "This project was done as part of my Data Science Capstone project for IBM, where I developed a machine learning model to predict the success of SpaceX Falcon9 rocket landings, it utilized web scrapped data as well as the spaceX API, to first extract all the data needed, then after a wrangling phase that data was saved in SQL tables and later used for a full deep analysis using Dash , plotly and numpy after that a Cross validation was used to compare multiple models.",
-    image: "/compressed-images-zd9vtfx4/compressed-home.webp",
+    image: "/projectPreviewsCompressed/SpaceX/home.webp",
     link: "https://github.com/JosephMoustaid/Data-science-Capstone---IBM",
     technologies: ["Python", "Scikit-learn", "Pandas", "Numpy", "Plotly", "BeautifulSoup", "Folium"]
   },
@@ -460,7 +464,7 @@ export const BLOGS = [
     title: "Mastering React Server Components in 2025",
     summary:
         "React Server Components (RSC) are reshaping how we think about rendering. In this post, we break down the fundamentals of RSC, compare them to traditional SSR and CSR techniques, and show you how to integrate them into your Next.js 14 projects. Includes code examples and performance benchmarks.",
-    image: "/blogImages/ai.webp",
+    image: "/blogImages/tinified/ai.webp",
     link: "https://youssefmoustaid.me/blog/1", 
     date: "May 20, 2025",
   },
@@ -470,7 +474,7 @@ export const BLOGS = [
     summary:
         "Failure isn’t the opposite of success—it’s part of the journey. Here’s\n" +
         "            why I believe we should celebrate our failures.",
-    image: "/blogImages/frustration.jpg",
+    image: "/blogImages/tinified/frustration.jpg",
     link: "https://youssefmoustaid.me/blog/2",  
     date: "April 25, 2025",
   },
@@ -479,7 +483,7 @@ export const BLOGS = [
     title: "Why Minimalism Matters",
     summary:
         "In a world of endless options, choosing less can lead to more clarity, purpose, and happiness.",
-    image: "/blogImages/minimalism.jpg",
+    image: "/blogImages/tinified/minimalism.jpg",
     link: "https://youssefmoustaid.me/blog/3",
     date: "April 25, 2025",
   },
@@ -489,7 +493,7 @@ export const BLOGS = [
     summary:
         "As technology evolves, how do we ensure it enhances humanity rather \n" +
         "            than diminishes it?",
-    image: "/blogImages/solarpunk.jpg",
+    image: "/blogImages/tinified/solarpunk.jpg",
     link: "https://youssefmoustaid.me/blog/4",
     date: "April 25, 2025",
   },
@@ -498,7 +502,7 @@ export const BLOGS = [
     title: "Lessons from Nature: What It Teaches Us About Innovation",
     summary:
         "From the efficiency of ecosystems to the resilience of forests, nature offers endless inspiration for innovation.",
-    image: "/blogImages/natureandinnovation.jpg",
+    image: "/blogImages/tinified/natureandinnovation.jpg",
     link: "https://youssefmoustaid.me/blog/5",
     date: "April 25, 2025",
   },
@@ -507,7 +511,7 @@ export const BLOGS = [
     title: "My experience with Spring ",
     summary:
         "From the basics of Spring Boot to the complexities of Spring Cloud.",
-    image: "/blogImages/Spring.webp",
+    image: "/blogImages/tinified/Spring.webp",
     link: "https://youssefmoustaid.me/blog/6",
     date: "April 25, 2025",
   },
@@ -815,7 +819,7 @@ export const PROJECTSDATA = {
     "prev" : "MyWeather",
     "techStack": ["Spring boot", "Java for Android", "REST API" ,  "React", "Python" , "Flask" , "Open-LLM-V6-2", "Scss"],
     "description": ["ChatBot is an AI-powered chatbot application that provides automated responses to user queries. The platform is designed to assist users with common questions and tasks, offering a seamless conversational experience."],
-    "images": [BricoleBanner,BricoleImage1, BricoleImage2, BricoleImage3 , BricoleImage4, BricoleImage5, BricoleImage6, BricoleImage7, BricoleImage8, BricoleImage9, BricoleImage10, BricoleImage11, BricoleImage12 ],  // Add images for ChatBot
+    "images": [BricoleBanner,BricoleImage1, BricoleImage2, BricoleImage3  ],  // Add images for ChatBot
     "githubLink": "https://github.com/JosephMoustaid/PFA",
     "features": [
       {

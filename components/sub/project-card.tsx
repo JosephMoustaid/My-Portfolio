@@ -28,8 +28,6 @@ export const ProjectCard = ({
     >
       <Link
         href={`/project/${title}` || link}
-        target="_blank"
-        rel="noreferrer noopener"
         className="group relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 backdrop-blur-xl hover:shadow-[0_0_40px_#9333ea55] transition-all duration-300 hover:scale-[1.025]"
       >
         {/* Image */}

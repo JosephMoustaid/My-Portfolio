@@ -113,37 +113,34 @@ const SkillCard = ({ name }: { name: string }) => {
   return (
     <motion.div
       variants={itemVariants}
-      whileHover={{ y: -8, scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ y: -6, scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
       className="group relative flex flex-col items-center justify-center 
-                 w-28 h-28 rounded-2xl bg-gradient-to-br from-[#0c0c1d]/80 to-[#111132]/80
-                 border border-gray-700/50 hover:border-purple-500/50
-                 backdrop-blur-md transition-all duration-300 cursor-pointer
-                 shadow-lg hover:shadow-purple-500/20 hover:shadow-2xl"
+                 w-28 h-28 rounded-xl macos-card cursor-pointer"
     >
-      {/* Glow effect on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-cyan-500/0 
-                      group-hover:from-purple-500/10 group-hover:to-cyan-500/10 
-                      rounded-2xl transition-all duration-300" />
+      {/* Subtle gradient glow on hover */}
+      <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-purple-500/5 via-transparent to-cyan-500/5" />
       
       {/* Icon */}
-      <div className="relative z-10">
+      <div className="relative z-10 transition-transform duration-300 group-hover:scale-110">
         {Icon ? (
-          <Icon className={`w-12 h-12 ${colorClass} transition-all duration-300 
-                           group-hover:scale-110 drop-shadow-lg`} />
+          <Icon className={`w-10 h-10 ${colorClass} transition-all duration-300 drop-shadow-lg`} />
         ) : (
-          <div className={`w-12 h-12 ${colorClass} flex items-center justify-center 
-                          text-2xl font-bold transition-all duration-300`}>
+          <div className={`w-10 h-10 ${colorClass} flex items-center justify-center 
+                          text-xl font-semibold transition-all duration-300`}>
             {name.charAt(0)}
           </div>
         )}
       </div>
 
       {/* Skill name */}
-      <div className="relative z-10 mt-3 text-white text-xs font-medium text-center 
-                      px-2 transition-all duration-300 group-hover:text-purple-300">
+      <div className="relative z-10 mt-2.5 text-white/70 text-xs font-medium text-center 
+                      px-2 transition-colors duration-300 group-hover:text-white">
         {name}
       </div>
+
+      {/* Bottom accent line */}
+      <div className="absolute bottom-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-purple-400/0 to-transparent group-hover:via-purple-400/50 transition-all duration-500" />
     </motion.div>
   );
 };
@@ -155,18 +152,18 @@ const SkillCategory = ({
   title: string; 
   skills: readonly { readonly skill_name: string; readonly image: string; readonly width: number; readonly height: number }[]; 
 }) => (
-  <div className="w-full mb-16">
+  <div className="w-full mb-12">
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="mb-8"
+      transition={{ duration: 0.4 }}
+      className="mb-6"
     >
-      <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 inline-block">
+      <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-2">
         {title}
       </h3>
-      <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full" />
+      <div className="h-0.5 w-16 bg-gradient-to-r from-purple-400/60 to-cyan-400/60 rounded-full" />
     </motion.div>
     
     <motion.div
@@ -174,7 +171,7 @@ const SkillCategory = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-6 justify-items-center"
+      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 justify-items-center"
     >
       {skills.map((skill) => (
         <SkillCard 

@@ -32,16 +32,14 @@ export const Projects = () => {
       <div 
         data-aos="fade-down" 
         data-aos-delay="100"
-        className="flex items-center justify-center"
+        className="flex flex-col items-center justify-center mb-12"
       >
-        <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 font-extrabold">
+        <h1 className="text-4xl md:text-5xl font-semibold text-white/95 mb-3 tracking-tight">
           My Projects
         </h1>
-              <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div className="cursive text-[20px] font-medium text-center text-gray-300">
-          Some of recernt work.
-        </div>
-      </div>
+        <p className="text-base text-white/60 font-normal">
+          Some of recent work.
+        </p>
       </div>
 
 
@@ -64,7 +62,7 @@ export const Projects = () => {
       {!showAll && PROJECTS.length > 6 && (
         <button
           onClick={() => setShowAll(true)}
-          className="mt-10 py-3 px-8 button-primary text-center text-white cursor-pointer rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300"
+          className="mt-12 py-3 px-7 button-primary text-center text-white/95 cursor-pointer rounded-xl text-base font-medium"
         >
           Show More Projects
         </button>
@@ -73,7 +71,7 @@ export const Projects = () => {
       {showAll && (
         <button
           onClick={() => setShowAll(false)}
-          className="mt-10 py-3 px-8 button-primary text-center text-white cursor-pointer rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300"
+          className="mt-12 py-3 px-7 button-primary text-center text-white/95 cursor-pointer rounded-xl text-base font-medium"
         >
           Show Less
         </button>

@@ -52,7 +52,7 @@ const Contact = () => {
       }`}
     >
       <motion.h2
-        className="text-4xl font-bold text-center mb-16 text-white"
+        className="text-4xl md:text-5xl font-semibold text-center mb-3 text-white/95 tracking-tight"
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
@@ -60,6 +60,15 @@ const Contact = () => {
       >
         Get in Touch
       </motion.h2>
+      
+      <motion.p
+        className="text-base text-white/60 font-normal text-center mb-16"
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6, delay: 0.1 }}
+      >
+        Let's discuss whatever you have in mind
+      </motion.p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <motion.div
@@ -68,28 +77,27 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <h4 className="text-2xl font-semibold text-white">Let’s discuss whatever you have in mind</h4>
           <Image
             src="/caffee.webp"
             width={2000}
             height={1000}
             alt="Contact"
             draggable={false}
-            className="rounded-xl hover:scale-105 transition-transform duration-300 border border-white/20"
+            className="rounded-2xl hover:scale-[1.02] transition-transform duration-500 macos-card overflow-hidden"
           />
         </motion.div>
 
         <motion.form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="space-y-6 backdrop-blur-xxl bg-black/30 border border-white/15 p-8 rounded-3xl"
+          className="space-y-5 macos-card p-8"
           initial={{ opacity: 0, x: 30 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
           {['name', 'email'].map((field) => (
             <div key={field}>
-              <label htmlFor={field} className="block text-white font-medium mb-1 capitalize">
+              <label htmlFor={field} className="block text-white/90 font-medium mb-2 capitalize text-sm">
                 {field}
               </label>
               <input
@@ -99,14 +107,14 @@ const Contact = () => {
                 required
                 value={formData[field as 'name' | 'email']}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-white/20 rounded-md bg-black/40 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/30 transition"
+                className="w-full px-4 py-3 border border-white/10 rounded-lg bg-white/5 text-white placeholder-white/40 focus:outline-none focus:border-white/20 focus:bg-white/10 transition-all backdrop-blur-sm"
                 placeholder={`Enter your ${field}`}
               />
             </div>
           ))}
 
           <div>
-            <label htmlFor="message" className="block text-white font-medium mb-1">
+            <label htmlFor="message" className="block text-white/90 font-medium mb-2 text-sm">
               Message
             </label>
             <textarea
@@ -116,7 +124,7 @@ const Contact = () => {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-white/20 rounded-md bg-black/40 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/30 transition resize-none"
+              className="w-full px-4 py-3 border border-white/10 rounded-lg bg-white/5 text-white placeholder-white/40 focus:outline-none focus:border-white/20 focus:bg-white/10 transition-all resize-none backdrop-blur-sm"
               placeholder="Write your message here..."
             />
           </div>
@@ -124,29 +132,21 @@ const Contact = () => {
         <button
           type="submit"
           disabled={isSending}
-          className="
-            w-full py-3 rounded-full 
-            bg-white text-black 
-            hover:bg-black hover:text-white 
-            transition-colors duration-300 
-            text-lg font-semibold 
-            border border-white
-            active:scale-[0.98] disabled:opacity-60
-          "
+          className="w-full py-3 rounded-xl button-primary text-white/95 text-base font-medium active:scale-[0.98] disabled:opacity-60 transition-all"
         >
           {isSending ? 'Sending...' : 'Send Message'}
         </button>
 
 
-          {error && <p className="text-red-400 text-sm">{error}</p>}
-          {isSent && <p className="text-green-400 text-sm">Message sent successfully!</p>}
+          {error && <p className="text-red-400/90 text-sm font-medium">{error}</p>}
+          {isSent && <p className="text-green-400/90 text-sm font-medium">Message sent successfully!</p>}
         </motion.form>
       </div>
 
-      <div className="mt-12 text-center space-y-2 text-sm text-gray-300">
+      <div className="mt-16 text-center space-y-2 text-sm text-white/60">
         <p>
           You can also reach me at{' '}
-          <a href="mailto:moustaidbusiness@gmail.com" className="text-white underline">
+          <a href="mailto:moustaidbusiness@gmail.com" className="text-white/90 hover:text-white underline transition-colors">
             moustaidbusiness@gmail.com
           </a>
         </p>
@@ -156,7 +156,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/youssef-moustaid-71013a240"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white underline"
+            className="text-white/90 hover:text-white underline transition-colors"
           >
             LinkedIn
           </a>

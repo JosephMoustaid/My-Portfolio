@@ -1,17 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better color contrast */
+:root {
+  --bg-primary: rgba(0, 0, 0, 0.6);
+  --bg-secondary: rgba(255, 255, 255, 0.03);
+  --bg-tertiary: rgba(255, 255, 255, 0.05);
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.12);
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-tertiary: rgba(255, 255, 255, 0.55);
+  --accent-purple: #a78bfa;
+  --accent-cyan: #67e8f9;
+}
+
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.98),
+      rgba(255, 255, 255, 0.98)
     ),
     linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
   background-blend-mode: normal, screen;
@@ -19,50 +42,256 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .Welcome-box {
   isolation: isolate;
   overflow: hidden;
   align-items: center;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  border-radius: 32px;
-  box-shadow: inset 0 -7px 11px #a48fff1f;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  border-radius: 20px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1),
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
   display: flex;
-
   position: relative;
   width: -moz-max-content;
   width: max-content;
-  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Welcome-box:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
+              0 1px 0 rgba(255, 255, 255, 0.15) inset;
 }
 
 .button-primary {
-  background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%
-    ),
-    rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08),
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
+
+.button-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.button-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
 .button-primary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12),
+              0 1px 0 rgba(255, 255, 255, 0.15) inset;
+}
+
+.button-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08),
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Enhanced macOS-style card with better shadows */
+.macos-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08),
+              0 1px 0 rgba(255, 255, 255, 0.06) inset,
+              0 0 0 1px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.macos-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border-secondary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12),
+              0 1px 0 rgba(255, 255, 255, 0.1) inset,
+              0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth focus states */
+.focus-ring {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.3);
+}
+
+/* Smooth gradient backgrounds */
+.gradient-mesh {
+  background: 
+    radial-gradient(at 27% 37%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, rgba(167, 139, 250, 0.1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(103, 232, 249, 0.1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgba(139, 92, 246, 0.1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+}
+
+/* Loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
   background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%
-    ),
-    rgba(113, 47, 255, 0.24);
-  box-shadow: inset 0 0 12px #bf97ff70;
+    to right,
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Smooth fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hidden {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
 
+/* Custom scrollbar - macOS style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+  background-clip: padding-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Better text selection */
+::selection {
+  background: rgba(167, 139, 250, 0.25);
+  color: white;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse glow effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(167, 139, 250, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(167, 139, 250, 0.4);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Animated gradient */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+/* Smooth scale on hover */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Better focus visible states */
+:focus-visible {
+  outline: 2px solid rgba(167, 139, 250, 0.5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth link transitions */
+a {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

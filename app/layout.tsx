@@ -5,6 +5,8 @@ import type { PropsWithChildren } from "react";
 import { Footer } from "@/components/main/footer";
 import { Navbar } from "@/components/main/navbar";
 import { StarsCanvas } from "@/components/main/star-background";
+import { BackToTop } from "@/components/util/BackToTop";
+import { ScrollProgress } from "@/components/util/ScrollProgress";
 import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 
@@ -29,8 +31,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
       >
         <StarsCanvas />
         <Navbar />
+        <ScrollProgress />
         {children}
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

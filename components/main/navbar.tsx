@@ -36,7 +36,7 @@ export const Navbar = () => {
 
         {/* Web Navbar */}
         <div className="hidden md:flex items-center gap-8">
-          <div className="flex items-center gap-1 macos-card px-3 py-2">
+          <div className="flex items-center gap-1 bg-[var(--bg-secondary)] border border-[var(--border-primary)] backdrop-blur-[24px] rounded-2xl px-3 py-2 transition-colors duration-300 hover:bg-[var(--bg-tertiary)]">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.title}

@@ -113,34 +113,31 @@ const SkillCard = ({ name }: { name: string }) => {
   return (
     <motion.div
       variants={itemVariants}
-      whileHover={{ y: -6, scale: 1.03 }}
-      whileTap={{ scale: 0.97 }}
+      whileHover={{ y: -2, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       className="group relative flex flex-col items-center justify-center 
-                 w-28 h-28 rounded-xl macos-card cursor-pointer"
+                 w-20 h-20 rounded-lg macos-card cursor-pointer"
     >
       {/* Subtle gradient glow on hover */}
-      <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-purple-500/5 via-transparent to-cyan-500/5" />
+      <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-purple-500/8 via-transparent to-cyan-500/8" />
       
       {/* Icon */}
-      <div className="relative z-10 transition-transform duration-300 group-hover:scale-110">
+      <div className="relative z-10 transition-transform duration-200 group-hover:scale-105">
         {Icon ? (
-          <Icon className={`w-10 h-10 ${colorClass} transition-all duration-300 drop-shadow-lg`} />
+          <Icon className={`w-7 h-7 ${colorClass} transition-all duration-200 drop-shadow-lg`} />
         ) : (
-          <div className={`w-10 h-10 ${colorClass} flex items-center justify-center 
-                          text-xl font-semibold transition-all duration-300`}>
+          <div className={`w-7 h-7 ${colorClass} flex items-center justify-center 
+                          text-lg font-semibold transition-all duration-200`}>
             {name.charAt(0)}
           </div>
         )}
       </div>
 
       {/* Skill name */}
-      <div className="relative z-10 mt-2.5 text-white/70 text-xs font-medium text-center 
-                      px-2 transition-colors duration-300 group-hover:text-white">
+      <div className="relative z-10 mt-1.5 text-white/60 text-[10px] font-medium text-center 
+                      px-1 transition-colors duration-200 group-hover:text-white/80 leading-tight">
         {name}
       </div>
-
-      {/* Bottom accent line */}
-      <div className="absolute bottom-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-purple-400/0 to-transparent group-hover:via-purple-400/50 transition-all duration-500" />
     </motion.div>
   );
 };
@@ -152,18 +149,18 @@ const SkillCategory = ({
   title: string; 
   skills: readonly { readonly skill_name: string; readonly image: string; readonly width: number; readonly height: number }[]; 
 }) => (
-  <div className="w-full mb-12">
+  <div className="w-full mb-8">
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 0, y: 8 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.4 }}
-      className="mb-6"
+      transition={{ duration: 0.3 }}
+      className="mb-4"
     >
-      <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-2">
+      <h3 className="text-lg md:text-xl font-medium text-white/90 mb-1.5 justify-center flex">
         {title}
       </h3>
-      <div className="h-0.5 w-16 bg-gradient-to-r from-purple-400/60 to-cyan-400/60 rounded-full" />
+      <div className="h-0.5 w-12 bg-gradient-to-r from-purple-400/50 to-cyan-400/50 rounded-full mx-auto" />
     </motion.div>
     
     <motion.div
@@ -171,7 +168,7 @@ const SkillCategory = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 justify-items-center"
+      className="flex flex-wrap gap-2.5 justify-center"
     >
       {skills.map((skill) => (
         <SkillCard 
@@ -187,11 +184,11 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center relative overflow-hidden py-20 px-4 md:px-8"
+      className="flex flex-col items-center justify-center relative overflow-hidden py-16 px-4 md:px-8"
     >
       <SkillText />
 
-      <div className="w-full max-w-7xl mx-auto mt-16 space-y-16 z-10">
+      <div className="w-full max-w-6xl mx-auto mt-12 space-y-8 z-10">
         <SkillCategory title="Data Engineering & Big Data" skills={DATA_ENGINEERING_SKILL} />
         <SkillCategory title="Backend & Databases" skills={BACKEND_SKILL} />
         <SkillCategory title="DevOps & Cloud" skills={FULLSTACK_SKILL} />
